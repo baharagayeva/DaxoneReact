@@ -1,0 +1,20 @@
+@import '../../components/header/__header.scss';
+@import '../../components/footer/_footer.scss';
+
+@import '../../components/BurgerMenu/__burgerMenu.scss';
+@import '../../components/MainSlider/_mainSlider.scss';
+@import '../../components/AdvertisementSide/_advertisementSide.scss';
+@import '../../components/DiscountSide/_discountSide.scss';
+@import '../../components/ProductsList/_productsList.scss';
+@import '../../components/ShopNowButton/_shopNowButton.scss';
+
+@import '../../pages/HomePage/_home.scss';
+@import '../../pages/ContactPage/_contactPage.scss';
+@import '../../pages/ShopPage/_shopPage.scss';
+@import '../../pages/ChekoutPage/_checkoutPage.scss';
+@import '../../pages/LoginAndRegister/_loginAndRegister.scss';
+
+@import '../../admin/adminPanelLayout/aside/_aside.scss';
+@import '../../admin/adminPanelLayout/header/_header.scss';
+
+@import "./_reset.scss"

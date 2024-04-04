@@ -1,0 +1,183 @@
+.checkout-page {
+    .checkout-accordion1 {
+        overflow: hidden;
+    }
+
+    .checkout-accordion-body {
+        max-height: 0;
+        transition: 2s;
+    }
+
+    i {
+        color: rgb(5, 189, 5);
+    }
+
+    p {
+        font-size: 14px;
+
+        span {
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                color: #FF6541;
+            }
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .checkout-login {
+        button {
+            background-color: #EEEFF2;
+            border: none;
+            border-radius: 0;
+            color: black;
+            padding: 10px 25px;
+            transition: .3s;
+
+            &:hover {
+                background-color: #FF6541;
+                color: white;
+            }
+        }
+    }
+
+    .checkout-accordion1-title {
+        background-color: #EEEFF2;
+        padding: 20px;
+    }
+
+    .checkout-social-buttons {
+        div {
+            font-size: 14px;
+            font-weight: 500;
+            background-color: #EEEFF2;
+            padding: 20px 100px;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background-color: #FF6541;
+                color: white;
+            }
+        }
+    }
+
+    .checkout-accordion-coupon {
+        input {
+            border-radius: 0;
+            padding: 10px;
+        }
+
+        button {
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 0;
+            color: white;
+            font-size: 14px;
+            transition: .3s;
+
+            &:hover {
+                background-color: #FF6541;
+                color: white;
+            }
+        }
+    }
+}
+
+.accordionNotActive {
+    max-height: 350px !important;
+
+}
+
+
+//Forms 
+.checkout-form {
+    .checkout-form-line {
+        background-color: #FF6541;
+        width: 70px;
+        height: 2px;
+        border: #FF6541;
+    }
+
+    .checkout-form-input {
+        input {
+            padding: 10px;
+            border: 1px solid #e8e8e8;
+            outline: none;
+
+            &:focus {
+                border-color: red;
+            }
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #e8e8e8;
+            outline: none;
+        }
+
+        #textarea {
+            border: none;
+            background-color: #E8EFF7;
+        }
+
+    }
+
+    .order-checkout {
+        border: 1px solid black;
+        padding: 40px;
+
+        .order-line {
+            background-color: #FF6541;
+            width: 50px;
+            height: 2px;
+            border: #FF6541;
+        }
+
+        .product-total {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #E8EFF7;
+            padding: 15px 0;
+        }
+
+        .product-name {
+            border-bottom: 1px solid #E8EFF7;
+            padding: 15px 0;
+
+            .product-price {
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+
+        .checkout-radio {
+            p {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        button {
+            width: 100%;
+            background-color: #FF5151;
+            border-radius: 0;
+            padding: 15px 40px;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            transition: .3s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

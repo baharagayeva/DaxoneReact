@@ -1,0 +1,84 @@
+.login-register-area {
+    padding-top: 85px;
+    padding-bottom: 90px;
+
+    .login-register-wrapper {
+        .login-register-button {
+            margin-bottom: 40px;
+
+            a {
+                color: #373737;
+                font-size: 25px;
+                margin: 0 20px;
+                font-weight: bold;
+            }
+
+            span {
+                cursor: pointer;
+                font-size: 25px;
+                font-weight: lighter;
+            }
+
+            .active {
+                color: #ff5151;
+            }
+        }
+
+        .login-register-form-container {
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+            padding: 80px;
+            text-align: left;
+            display: none;
+
+            .login-form-content {
+                .inp-box {
+                    input {
+                        background-color: transparent;
+                        border: 1px solid #ebebeb;
+                        font-size: 14px;
+                        height: 50px;
+                        margin-bottom: 30px;
+                        padding: 0 15px;
+                        color: #010225;
+                        outline: none;
+                    }
+                }
+
+                .button-box{
+                    .login-btn {
+                        padding: 10px 0 19px;
+    
+                        label,
+                        a {
+                            font-size: 15px;
+                            color: #010225;
+                        }
+                    }
+
+                    .forgot-password{
+                        &:hover{
+                            color: #ff5151;
+                        }
+                    }
+
+                    button{
+                        padding: 13px 30px;
+                        background-color: #ff5151;
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: bold;
+                        border: none;
+
+                        &:hover{
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .login-register-form-container.active{
+            display: block;
+        }
+    }
+}

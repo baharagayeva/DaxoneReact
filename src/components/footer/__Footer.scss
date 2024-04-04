@@ -1,0 +1,193 @@
+// Home Footer
+footer {
+    .af {
+        color: #737373;
+    }
+
+    .hover-col {
+        &:hover {
+            color: #FF5151;
+        }
+    }
+
+    .footer-1 {
+        background-color: #f8f8f8;
+        padding: 120px 0 85px 0;
+
+        .icon-paragraph {
+            margin: 21px 0 23px;
+        }
+
+        ul {
+            @media (max-width:567px){
+                padding-left: 0;
+            }
+            li {
+                line-height: 35px;
+            }
+        }
+
+        .footer-icon {
+            font-size: 16px;
+            color: #9d9d9d;
+
+            &:hover {
+                color: #FF5151;
+            }
+        }
+
+        .footer-header {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #373737;
+            font-weight: bold;
+        }
+
+        .inp-paragraph {
+            color: #373737;
+            margin: 15px 0 30px;
+        }
+
+        .footer-inp {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e3e3e3;
+            font-size: 14px;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                padding-right: 55px;
+                color: #737373;
+
+                @media (max-width:1199px) {
+                    padding-right: 0;
+                }
+
+                @media (max-width:575px) {
+                    padding-right: 45px;
+                }
+            }
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer-2 {
+        background-color: #ebebeb;
+        font-size: 14px;
+
+        p {
+            padding: 20px 0;
+        }
+    }
+}
+
+// Second Footer
+.footer-area {
+    background-color: #f4f8fa;
+    padding-top: 80px;
+
+    .hover-col {
+        &:hover {
+            color: #FF5151 !important;
+        }
+    }
+
+    .footer-container {
+
+        @media(min-width:1200px) {
+            padding: 0 65px;
+        }
+
+        @media(max-width:1199px) and (min-width:992px) {
+            padding: 0 30px;
+        }
+
+        @media(max-width:991px) and (min-width:768px) {
+            padding: 0 45px;
+        }
+
+        @media(max-width:767px) {
+            padding: 0 10px;
+        }
+
+        .footer-top {
+            padding-bottom: 40px;
+
+            .footer-wrapper {
+                margin-bottom: 30px;
+
+                .footer-about {
+                    font-size: 14px;
+                    color: #373737;
+                    margin: 0;
+                    line-height: 25px;
+                    margin: 42px 0 0;
+
+                    @media (min-width:1200px) {
+                        width: 56%;
+                    }
+                }
+
+                li {
+                    line-height: 35px;
+
+                    .footer-header {
+                        color: #373737;
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: 35px;
+                    }
+
+                    a {
+                        color: #373737;
+                        font-size: 14px;
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+
+            .row {
+                border-top: 1px solid #e5e5e5;
+                border-bottom: 1px solid #e5e5e5;
+                padding-top: 40px;
+
+                .tag-sections {
+                    padding: 0 15px 35px;
+
+                    .tag-title {
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .tag-list {
+                        li {
+                            margin: 0 12px 5px 0;
+
+                            a {
+                                color: #373737;
+                                font-size: 14px;
+                                font-style: italic;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .copyright {
+                padding: 20px 0;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

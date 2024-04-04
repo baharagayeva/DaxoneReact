@@ -1,0 +1,238 @@
+.sticky-header {
+  background-color: #eef6ff;
+  nav {
+    .inner-container {
+      .nav-logo {
+        cursor: pointer;
+        line-height: 110px;
+      }
+
+      .nav-menu {
+        .nav-menu-list {
+          .nav-menu-list-item {
+            font-size: 18px;
+            position: relative;
+            z-index: 15;
+            overflow: hidden;
+
+            &:hover .home-dropdown {
+              transition: 0.2s;
+              opacity: 1;
+              height: max-content;
+            }
+
+            &:hover {
+              overflow: visible;
+            }
+
+            &:hover a {
+              color: #ff6541;
+            }
+
+            .home-dropdown {
+              z-index: 100;
+              height: 0;
+              opacity: 0;
+              background-color: white;
+              position: absolute;
+              width: max-content;
+              padding: 20px;
+              box-shadow: 0 0 20px 0.4px rgba(0, 0, 0, 0.1);
+
+              .home-dropdown-list-item {
+                transition: 0.3s;
+                cursor: pointer;
+
+                a {
+                  line-height: 34px;
+
+                  &:hover {
+                    color: #ff6541 !important;
+                  }
+                }
+              }
+            }
+
+            a {
+              line-height: 110px;
+              color: #373737 !important;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+
+      .nav-basket {
+        i {
+          cursor: pointer;
+          transition: 0.2s;
+
+          &:hover {
+            color: #ff6541;
+          }
+        }
+
+        h5 {
+          cursor: pointer;
+          transition: 0.2s;
+
+          &:hover {
+            color: #ff6541;
+          }
+        }
+
+        .burger-menu {
+          position: fixed;
+          top: 0;
+          padding: 35px 30px;
+          background-color: #fff;
+          transition: 0.6s;
+          right: -500px;
+          height: 100%;
+          width: 250px;
+
+          // overflow-x: scroll;
+          // overflow-y: scroll;
+          .burger-menu-close {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            padding: 15px;
+            position: absolute;
+            top: 0;
+            left: -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+            i {
+              color: white;
+            }
+          }
+
+          .burger-menu-input {
+            input {
+              font-size: 14px;
+              width: 100%;
+              height: 50px;
+              border: none;
+              background-color: #f6f6f6;
+              padding: 15px;
+            }
+
+            i {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 50px;
+              padding: 15px;
+              border: none;
+              background-color: #f6f6f6;
+              border-left: 1px solid gray;
+            }
+          }
+
+          .burger-menu-list-menu-container {
+            .burger-menu-list-menu {
+              a {
+                color: black;
+              }
+
+              .burger-menu-list-menu-item {
+                overflow: hidden;
+
+                .burger-dropdown {
+                  transition: 0.4s;
+                  font-size: 14px;
+                  max-height: 0;
+                }
+              }
+            }
+
+            i {
+              font-size: 12px !important;
+            }
+          }
+
+          .burger-menu-list-footer-container {
+            .burger-menu-list-footer {
+              a {
+                color: black;
+              }
+
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sticky-header.second-header {
+  background-color: #e6eff8;
+}
+
+.sticky-header.sticky {
+  position: fixed;
+  top: 0;
+  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+  background-color: #fff;
+  border-bottom: 0 solid #4a90e2;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease 0s;
+  height: 100px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.burgerActive {
+  right: 0 !important;
+  z-index: 33333;
+}
+
+.overlayActive {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 35, 36, 0.7) none repeat scroll 0 0;
+  z-index: 2222;
+}
+
+.accordionActive {
+  max-height: 200px !important;
+}
+
+.plusMinusActive {
+  display: none;
+}
+
+// second header
+.nav.second {
+  .sec-icons {
+    font-size: 20px;
+    color: #010211;
+    cursor: pointer;
+
+    span {
+      color: #ff5151;
+      font-weight: bold;
+    }
+  }
+}

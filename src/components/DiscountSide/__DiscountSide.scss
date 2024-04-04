@@ -1,0 +1,87 @@
+.discount-section {
+    .discount-area {
+        padding-bottom: 100px;
+
+        .discount-img {
+            position: relative;
+            margin-left: 70px;
+
+            @media (max-width:576px) {
+                margin-left: 40px;
+            }
+
+            &::before {
+                background-color: #fff6f6;
+                content: "";
+                height: calc(100% - 30px);
+                left: -70px;
+                position: absolute;
+                top: -40px;
+                width: 100%;
+                z-index: -1;
+
+
+                @media (max-width:767px) {
+                    left: -30px;
+                }
+            }
+        }
+
+        .discount-content {
+            margin-left: 30px;
+
+            @media (max-width:991px) {
+                margin-left: 0;
+            }
+
+            @media (max-width:767px) {
+                margin-top: 30px;
+            }
+
+            p {
+                color: #737373;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-size: 36px;
+                color: #383838;
+                margin: 21px 0 34px;
+                font-weight: bold;
+                line-height: 46px;
+                letter-spacing: 0.5px;
+
+                @media (max-width:991px) {
+                    font-size: 30px;
+                    margin: 15px 0 20px;
+                    line-height: 40px;
+                }
+            }
+
+            .discount-p {
+                color: #373737;
+                margin-bottom: 8px;
+            }
+
+            .discount-btn {
+                button {
+                    border: 1px solid #FF5151;
+                    background-color: transparent;
+                    padding: 14px 30px;
+                    font-size: 14px;
+                    color: #FF5151;
+                    font-weight: bold;
+
+                    background: linear-gradient(#ff5151 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+                    transition: .4s, background-position 0s;
+
+                    &:hover {
+                        --p: 100%;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
